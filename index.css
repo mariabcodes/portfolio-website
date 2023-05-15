@@ -1,0 +1,455 @@
+html {
+    background-color: #ffccc9;
+   /*background-image: linear-gradient(to left bottom, #e51065, #eb3d62, #f05962, #f37065, #f5856b, #fa9d83, #feb19f, #ffbaae, #ffc3bc, #ffccc9);*/
+     scroll-behavior: smooth;
+     margin: 0px;
+   }
+   
+  .container {
+    /* This is all sorted now */
+
+  /*background-color: #f79f79;*/
+   background-image: linear-gradient(to bottom, #f79f79 25%, #ffccc9 75%);
+   height: 64px;
+   width: 100vw;
+   padding: 0px;
+   margin-top: -64px;
+   margin-left: -10px;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   }
+
+nav {
+  /* This is all sorted now */
+
+    position: fixed; 
+    padding: 0;
+    z-index: 99;
+   }
+
+ .navbar-toggle {
+  /* This is all sorted now */
+
+    display: block;
+    position: relative;
+    margin-right: 10px;
+    z-index: 1;
+    user-select: none;
+    appearance: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+   }
+
+ .navbar-toggle span {
+  /* This is all sorted now */
+
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 8px;
+    position: relative;
+    background-color: #e51065;
+    border-radius: 5px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.5s;
+ }
+
+ /* This is all sorted now */
+
+ .navbar-toggle:hover span:nth-child(1) {
+  transform: translateX(6px);
+ }
+
+ .navbar-toggle:hover span:nth-child(2) {
+  transform: translateX(10px);
+ } 
+ 
+ .navbar-toggle:hover span:nth-child(3) {
+  transform: translateX(14px);
+ }
+
+ /*span:active, span:focus {
+   display: block;
+   max-width: fit-content;
+   min-width: 150px;
+   max-height: fit-content;
+   min-height: 200px;
+   background-color: #f79f79;
+ } */
+
+ .menu {
+  /* This is all sorted now */
+  display: none;
+  flex: auto;
+  position: absolute;
+  right: 20px;
+ }
+
+  .menu a {
+    /* This is all sorted now */
+
+    color: #3B7080;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 550;
+    font-family: Arial, sans-serif;
+    border-bottom: #ffccc9;
+    margin: 10px;
+    word-wrap: none;
+   }
+ 
+   .menu a:hover {
+    /* This is all sorted now */
+
+     background-color: #d3fdff;
+     color: #e51065;
+     border-radius: 7px;
+     border-bottom: 3px solid #e51065;
+     cursor: pointer;
+     padding: 12px;
+   }
+ 
+   .menu a:active {
+    /* This is all sorted now */
+
+     background-color: #e51065;
+     color: black;
+     border-bottom: 3px solid black;
+   }
+
+  @media (min-width: 768px) {
+    /* This is all sorted now */
+
+    .navbar-toggle {
+      display: none;
+    }
+   .menu {
+    display: block;
+   }
+  }
+
+  .navbar-toggler:active {
+
+  }
+
+   .logo {
+    width: 250px;
+    height: 40px; 
+    display: box;
+    align-content: left;
+    /*align-items: center;*/
+    margin: 20px;
+   }
+   
+   .image {
+    /* This is all sorted now */
+    margin: 64px -30px 0 -10px;
+    width: 110%;
+    height: 150px;
+    object-fit: cover;
+    object-position: 100% 20%;    
+    border: 0;
+    display: block;
+    align-items: right;
+    background-attachment: fixed;
+    background-position: right;
+    /*filter: blur(3px);*/
+    box-shadow: pink;  
+   }
+ 
+   .portrait {
+    /* This is all sorted now */
+     height: 300px;
+     width: 260px;
+     border-radius: 20px;
+     box-shadow: -45px -45px 0 -40px #e51065,
+     45px 45px 0 -40px #e51065;
+     /*margin: 10px 15px 10px, 15px;*/
+     margin: 40px 40px 40px 0;
+     padding: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     object-fit: cover;
+ }
+
+   #photo {
+    /* This is all sorted now */
+     display: flex;
+     align-items: center;
+     /*justify-content: center;*/
+     margin: 20px;
+     padding: 40px;
+     grid-template-columns: 1fr 1fr;
+   }
+ 
+   #about-me {
+     display: grid;
+     align-items: center;
+     grid-template-columns: 1fr;
+     padding: 30px;
+   }
+ 
+   #about-me h1 {
+     text-align: center;
+     font-size: 30px;
+     font-weight: bolder;
+     font-family: Arial, Helvetica, sans-serif;
+   }
+ 
+   #about-me p {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     font-size: 20px;
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: left;
+   }
+
+   .background a {
+     text-decoration: none;
+     color: black;
+   }
+
+   .background a:hover {
+     color: #e51065;
+     text-decoration: underline #e51065;
+   }
+
+   .background a:active {
+     color: #e51065;
+     text-decoration: underline #e51065;
+   }
+
+   .background a:visited {
+      color: #3B7080;
+     text-decoration: underline #e51065;
+   }
+ 
+ .background {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px; 
+  margin-top: -50px;
+ }
+
+  br {
+  font-weight: 5px;
+  }
+
+.project-tile {
+  border: 3px solid #f79f79;
+  width: 250px;
+  height: 200px;
+}
+
+div .project-tile {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  padding: 20px;
+  text-align: center;
+}
+.portfolio {
+  box-sizing: border-box;
+  padding: 0 6px;
+  float:left;
+  width: 25%;
+  display: block;
+}
+
+.tile {
+  width: 250px;
+  height: 220px;
+}
+
+/* This is all okay now*/
+@media only screen and (max-width: 700px) {
+  .portfolio {
+    width: 40%;
+    margin: 6px 0;
+  }
+}
+
+/* This is all okay now*/
+@media only screen and (max-width: 500px) {
+  .portfolio {
+    width: 100%;
+  }
+}
+.table::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  /*.project-tile .tile {
+    display: grid;
+    align-items: center;
+    object-fit: scale-down;
+    width: 49%;
+   }
+
+  .portfolio .tile {
+    border: 2px solid #f79f79;
+   }
+
+  .tile {
+    height: auto;
+    min-width: 180px;
+    min-height: 140px;
+  }
+
+ .portfolio .description {
+  padding: 15px;
+  text-align: center;
+}*/
+
+/*
+  .project-tile {
+     position: relative;
+     width: 1200px;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     transform-style: preserve-3d;
+     perspective: 700px;
+   }
+   
+   .project-tile .tile {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      transition: 1s;
+      transform-style: preserve-3d;
+      overflow: scroll;
+     }
+
+     .project-tile:hover .tile {
+      transform: rotateX(30deg);
+     }
+
+     .project-tile .tile:hover {
+      transform: rotate(0deg) scale(1.20);
+      z-index: 1;
+      box-shadow: 0 10px 25px #3B7080;
+     }*/
+
+
+
+
+footer {
+/* This is all sorted now */
+
+ background-color: #f79f79;
+ font-family: Arial, sans-serif;
+ word-wrap: none;
+ text-align: left;
+ margin: -10px;
+ padding: 30px;
+ display: flex;
+ flex-wrap: wrap;
+ min-height: 250px;
+ width: 100%;
+}
+
+.footer-block {
+  /* This is all sorted now */
+
+  display: flex;
+  justify-content: center;
+}
+
+.media-icons {
+  /*This is all sorted now*/
+
+   width: 50px;
+   height: 50px;      
+   object-fit: scale-down;
+   margin: 0 8px 8px 0;
+  }
+
+ .media-icons:hover {
+  /* This is all sorted now */
+
+  border-bottom: 5px solid #3B7080;
+  border-radius: 3px;
+  margin-top: -8px;
+  transition: 0.3s;
+ }
+
+ .media-icons:active {
+ /* This is all sorted now */
+
+  border-radius: 7px;
+  background-color: #d3fdff;
+ }
+
+.back-to-top {
+ /* This is all sorted now */
+
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 9px;
+  background-color: #d3fdff;
+  color: black;
+  padding: 17px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.back-to-top:hover {
+  /* This is all sorted now */
+
+  background-color: #ffccc9;
+  border-radius: 7px;
+  border-bottom: #e51065;
+  font-size: large;
+  font-weight: bolder;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.back-to-top:active {
+/* This is all sorted now */
+
+  background-color: #f79f79;
+  border-radius: 7px;
+  border-bottom: #e51065;
+  font-size: medium;
+  font-weight: lighter;
+  padding: 10px;
+  /*transition: 1s;
+  scroll-behavior: smooth;*/
+}
+
+#media-profiles {
+  /* This is all sorted now */
+  margin: 5px;
+  align-items: flex-start;
+  font-size: 16px;
+  font-weight: 700;
+  word-wrap: wrap;
+}
+
+#question { 
+  /* This is all sorted now */
+
+  border-radius: 9px;
+  background-color: #e51065;
+  padding: 10px;
+  color: #ffccc9;
+  text-align: center;
+  margin: -35px 0 50px 0;
+  align-self: center;
+}
